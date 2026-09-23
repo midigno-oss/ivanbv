@@ -57,12 +57,12 @@
   /* ---------- NAV ---------- */
   header{
     position:fixed;top:0;left:0;right:0;z-index:200;
-    display:flex;align-items:center;justify-content:flex-end;
+    display:flex;align-items:center;justify-content:flex-start;
     padding:24px 32px;
     background:linear-gradient(180deg, rgba(5,7,15,0.85), rgba(5,7,15,0));
     backdrop-filter:blur(6px);transition:background .4s;
   }
-  nav.desktop-nav{display:flex;gap:8px;font-size:13px;letter-spacing:0.04em;margin-right:260px;}
+  nav.desktop-nav{display:flex;gap:8px;font-size:13px;letter-spacing:0.04em;}
   nav.desktop-nav a{
     color:var(--steel);transition:color .3s, border-color .3s, background .3s;
     padding:9px 18px;border:1px solid rgba(244,245,247,0.14);border-radius:999px;
@@ -882,7 +882,7 @@
   window.addEventListener('scroll', () => {
     header.style.background = window.scrollY > 40
       ? 'rgba(5,7,15,0.92)'
-      : 'linear-gradient(180deg, rgba(5,7,15,0.85), rgba(5,7,15,0));';
+      : 'linear-gradient(180deg, rgba(5,7,15,0.85), rgba(5,7,15,0))';
   });
 
   // reel arrow controls
