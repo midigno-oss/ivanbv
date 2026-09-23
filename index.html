@@ -97,6 +97,13 @@
   }
   @keyframes sweep{0%,100%{left:-10%;opacity:0;}45%{opacity:0.35;}50%{left:108%;opacity:0;}50.01%{left:-10%;}}
   .hero-inner{position:relative;z-index:2;width:100%;}
+.hero-inner .wrap{position:relative;}
+.hero-inner .wrap::before{
+  content:"";position:absolute;
+  left:-40px;top:-40px;right:40%;bottom:-40px;
+  background:radial-gradient(ellipse at left, rgba(5,7,15,0.9) 0%, rgba(5,7,15,0.7) 55%, transparent 85%);
+  z-index:-1;
+}
   .hero h1{font-size:clamp(32px,5vw,58px);line-height:1.05;margin-bottom:18px;font-weight:800;}
   .hero-roles{font-size:clamp(13px,1.4vw,16px);color:var(--steel);margin-bottom:34px;max-width:520px;font-family:var(--sans);}
   .manifest{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.8vw,30px);line-height:1.28;max-width:560px;margin-bottom:38px;}
